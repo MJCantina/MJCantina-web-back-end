@@ -1,0 +1,36 @@
+.tituloLog{
+    font-family: var(--poppins--);
+}
+
+.textsenha1{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.textSenha2{
+    font-weight: 400;  
+}
+
+.nomeCantina{
+    size: 36px;
+    line-height: 43.92px;
+}
+
+.mj{
+    font-weight: 400;
+}
+
+.boxSub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.botaoEnviar {
+    margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+
+h1.logoMJ {
+    text-align: center;
+    font-family: var(--logo--);
+}
+
+
+h2.tituloLogin{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h3.textLogin{
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tituloLog {
+    height: 50px;
+}
+
+input{
+    border-radius: 12px;
+    font-size: 10px;
+    background-color: var(--input--);
+    border: none;
+    width: 320px;
+    height: 45px;
+}
+
+::placeholder {
+    color: var(--cor-preta--);
+}
+
+
+.senhaEsquecida{
+    display: flex;
+    justify-content: center;
+}
+
+.linkEsqSenha{
+    size: 10px;
+   line-height: 15.01px;
+   font-size: 8px;
+   color: black;
+   text-decoration: none;
+   margin-top: 10px;
+   font-family: var(--poppins--);
+}
+
+.nomeCantina{
+    font-family: Montserrat;
+    size: 36px;
+    line-height: 43.92px;
+
+}
+
+.mj{
+    font-weight: 400;
+}
+
+.titulo{
+    margin: 0%;
+}
+

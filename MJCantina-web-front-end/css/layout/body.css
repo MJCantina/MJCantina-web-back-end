@@ -1,0 +1,11 @@
+body{
+    background-color: var(--background--);
+    height: 100vh;
+    gap: 16px;
+    padding: 0%;
+    margin: 0%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

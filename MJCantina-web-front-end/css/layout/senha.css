@@ -1,0 +1,46 @@
+
+h1 {
+    text-align: center;
+}
+
+
+
+.titulosenha{
+    display: flex;
+    justify-content: center;
+    size: 24px;
+    font-weight: 600;
+    display: block;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+
+.textEmail{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.nomeCantina{
+    size: 36px;
+    line-height: 43.92px;
+
+}
+
+.mj{
+    font-weight: 400;
+}
+

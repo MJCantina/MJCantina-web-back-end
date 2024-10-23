@@ -1,0 +1,26 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    height: 24px;
+    margin-bottom: 5px;
+    font-family: var(--poppins--);
+}
+
+
+
+.nomeCantina{
+    size: 36px;
+    line-height: 43.92px;
+
+}
+
+.mj{
+    font-weight: 400;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
