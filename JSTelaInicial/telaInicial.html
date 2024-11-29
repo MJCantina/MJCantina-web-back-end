@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="saudacao">
+            <h1 class="logoMJ">Bom dia, Jerry!</h1>
+            <div><p>Pedidos do aplicativo</p></div>
+        </div>
+        <div class="btns_header">
+            <button class="btns_balcao_conta">Balcão</button>
+            <button class="btns_balcao_conta" onclick="window.location.href='conta.html'">Conta</button>
+            <button class="btns_config_sair"><img src="assets/setting-2-black.svg" alt="Configurações"></button>
+            <button class="btns_config_sair" onclick="window.location.href='login.html'"><img src="assets/logout_black.svg" alt="Sair"></button>
+        </div>
+    </header>
+    
+    <section id="pedidos_a_fazer_e_concluidos">
+        
+        <div class="pedidos_a_fazer">
+            <div class="titulo_pedidos">
+                <h2>Pedidos a fazer</h2>
+                <div class="quant_pedidos_fazer"></div>
+                <div class="icon_eye"><img src="assets/eye.svg" alt="Ver pedidos"></div>
+            </div>
+            <div class="lista_pedidos_a_fazer" id="pedido1">
+                <h3 class="numero_pedido">#1</h3>
+                <p class="itens_pedido">Batata Frita <br> Refrigerante <br> Coxinha</p>
+                <p class="nome_do_cliente">Plínio Calvacante</p>
+                <div class="btn_expandir">
+                    <button class="btn_concluir_pedidos">Concluir</button>
+                    <button class="pop_up_expandir"><img src="assets/maximize-4.svg" alt="Expandir o pedido"></button>
+                </div>
+                
+                <!-- Estrutura do popup -->
+                <div class="popup">
+                    <div class="popup-content">
+                        <h3 class="numero_pedido">#1</h3>
+                        <p class="itens_pedido">Batata Frita <br> Refrigerante <br> Coxinha</p>
+                        <p class="nome_do_cliente">Plínio Calvacante</p>
+                        <div class="centralizar_fechar_popup">
+                            <button class="pop_up_fechar">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pedidos_concluidos">
+            <div class="titulo_pedidos_concluidos">
+                <h2>Pedidos Concluídos</h2>
+                <div class="quant_pedidos_concluidos"></div>
+                <div class="icon_eye"><img src="assets/eye.svg" alt="Ver pedidos concluídos"></div>
+            </div>
+            <div class="lista_pedidos_concluidos">
+                <!-- Pedidos concluídos serão movidos para cá -->
+            </div>
+        </div>
+    
+    </section>
+    
+    <section id="historico_pedidos">
+        <div class="historico">
+            <div class="titulo_historico">
+                <h2>Histórico de Pedidos</h2>
+                <div class="icon_eye"><img src="assets/eye.svg" alt="Ver histórico de pedidos"></div>
+            </div>
+            <div class="lista_pedidos_historico">
+                <!-- Pedidos serão movidos para cá -->
+            </div>
+        </div>
+    </section>
+    
+    <div class="bottom_bar">
+        <a class="icon_estoque" href="estoque.html"><img src="assets/estoque_black.svg" alt="Ir para a página de estoque"></a>
+        <a class="icon_pedidos" href="telaInicial.html"><img src="assets/pedidos_rosa.svg" alt="Ir para a página de pedidos"></a>
+        <a class="icon_perfil" href="paineldeControle.html"><img src="assets/user-black.svg" alt="Ir para a página de perfil"></a>      
+    </div>
+    <script src="./telaInicial.js"></script>
+</body>
+</html>
