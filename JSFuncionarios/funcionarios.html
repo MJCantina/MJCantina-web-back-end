@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff2459;
+            color: white;
+            padding: 10px 20px;
+        }
+        .adicionar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .adicionar h2 {
+            margin: 0;
+        }
+        .botaoMais {
+            background: #ff2459;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .botaoMais img {
+            width: 24px;
+        }
+        .informacao {
+            padding: 20px;
+        }
+        .funcionarioInformacao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .descricaoFunc {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .descricaoFunc input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .lixeira {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .lixeira img {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logoMJ">Funcionários</h1>
+        <a href="./paineldeControle.html">
+            <button class="btns_config_voltar" onclick="">
+                <img src="assets/arrow-left.svg" alt="Voltar">
+            </button>
+        </a>
+    </header>
+    
+    <div class="adicionar">
+        <h2>Adicionar funcionários</h2>
+        <button class="botaoMais" type="button">
+            <img src="assets/add.svg" alt="Adicionar funcionário">
+        </button>
+    </div>
+
+    <section class="informacao">
+        <h2>Lista de Funcionários</h2>
+    </section>
+
+    <script src="./funcionarios.js"></script>
+</body>
+</html>
