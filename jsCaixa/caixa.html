@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="pt-br">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Caixa</title>  
+    <link rel="stylesheet" href="css/main.css">  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- jQuery for easier DOM manipulation -->  
+</head>  
+<body>  
+    <header>  
+        <div class="titulo_Caixa">  
+            <h1 class="logoMJ">Caixa</h1>  
+        </div>  
+        <div class="btns_header_caixa"> <a href="./conta.html">
+            <button class="btns_balcao_conta" type="button">Conta</button>
+        </a> 
+
+        <a href="./paineldeControle.html">
+            <button class="btns_config_sair" type="button" aria-label="Sair"><img src="assets/logout_black.svg" alt="Sair"></button>  
+
+        </a>
+        </div>  
+    </header>  
+    
+    <main class="painel_caixa">  
+        <section class="itens_caixa">  
+   
+                <div class="filtro-button-container">  
+                    <button class="btn_filtro active" data-categoria="todos">Todos</button>  
+                    <button class="btn_filtro" data-categoria="salgados">Salgados</button>  
+                    <button class="btn_filtro" data-categoria="bebidas">Bebidas</button>  
+                    <button class="btn_filtro" data-categoria="lanches">Lanches</button>  
+                    <button class="btn_filtro" data-categoria="pasteis">Pastéis</button>  
+                    <button class="btn_filtro" data-categoria="doces">Doces</button>  
+                    <button class="btn_filtro" data-categoria="pratos_feitos">Prato Feito</button>  
+                </div>  
+            </div>  
+            
+            <div id="produtos-container"></div>  
+            <!-- Filtro em Letras -->  
+           
+
+            <!-- Lista de Produtos -->  
+            <div class="produtos_e_valores_caixa">  
+                <!-- Os produtos serão gerados dinamicamente via JavaScript -->  
+                <div id="produtos-container"></div>  
+            </div>  
+        </section>  
+
+        <!-- Seção de Pagamento -->  
+        <section class="soma_produtos_caixa">  
+            <div class="codigo_e_contador">     
+                <div class="borda_codigo_contador_caixa">  
+                    <input type="number" name="codigo_caixa" id="codigo_caixa" placeholder="Código" aria-label="Código do Produto">  
+                </div>  
+                <div class="borda_codigo_contador_caixa">  
+                    <button class="btn_contador_item" id="btn_contador_diminuir_item" type="button" aria-label="Diminuir Itens"><img src="assets/-.svg" alt="Diminuir"></button>  
+                    <div class="numero_de_itens_no_contador">0</div>  
+                    <button class="btn_contador_item" id="btn_contador_aumentar_item" type="button" aria-label="Aumentar Itens"><img src="assets/+.svg" alt="Aumentar"></button>  
+                </div>  
+            </div>  
+        
+            <div class="descricao_itens_a_serem_comprados">  
+                <div id="comprados-list-container"></div>  
+            </div>  
+            
+            <div class="valor_total_caixa">  
+                <p class="titulo_valor_total_caixa"><strong>Valor Total:</strong></p>  
+                <p class="preco_total_pedido_caixa">R\$0,00</p>  
+            </div>  
+            
+            <div class="btns_cancelar_prosseguir_pedido">  
+                
+                <button class="btn_cancelar_compra_caixa" type="button" >Cancelar<img src="assets/close-square.svg" alt="Icon de Cancelar"></button>  
+                <a href="">
+
+                </a>
+                <button class="btn_prosseguir_compra_caixa" type="button"  onclick="window.location.href='caixaConfirmarPagamento.html'">Seguir<img src="assets/arrow-right.svg" alt="Icon de Prosseguir"></button>  
+            </div>  
+        </section>
+    </main>  
+
+    <script src="./caixa.js"></script>  
+</body>  
+</html>
